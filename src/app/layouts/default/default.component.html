@@ -1,0 +1,46 @@
+<mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    <div class="logo">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://i.ibb.co/CwnG3LX/Background.png" alt="Background" width="180px" height="40px">
+    </div>
+    <div class="menu-button-main">
+    <button mat-button class="menu-button">
+        <mat-icon>home</mat-icon>
+    </button>
+    <button mat-button class="menu-button">
+        <mat-icon>person</mat-icon>
+    </button>
+    <button mat-button class="menu-button">
+        <mat-icon>info</mat-icon>
+    </button>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+
+        <img class="avatar mat-elevation-z8" src="https://stellamarisschool.org/assets/web/images/Stella_Maris_logo.png" />
+
+        <h4 class="name">Stella Maris</h4>
+        <p class="designation">StellaMaris@attendme.edu</p>
+
+        <mat-divider></mat-divider>
+        
+        <app-menu 
+        [options]="options" 
+        [menus]="menus">
+        </app-menu>
+    </mat-sidenav> 
+
+    <div class="container2">
+        <router-outlet></router-outlet>
+    </div>
+</mat-sidenav-container>

@@ -1,0 +1,79 @@
+mat-toolbar {
+    background-color: white;
+    color: rgb(40, 106, 211);
+    height: 85px;
+    border-style: solid;
+    border-color: #002171;
+    border-top-width: 15px;
+    border-bottom-width: 4px    
+}
+
+mat-sidenav {
+    margin: 16px;
+    width: 20%;
+    border-right: none;
+    border-radius: 10px;
+    background: #1975BD;
+    color:white;
+    padding: 16px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #002171;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+    width: 100%;
+    background: url('https://i.ibb.co/M6DJgkz/vecteezy-blue-background-ma1020.jpg" alt="vecteezy-blue-background-ma1020') no-repeat center;
+    background-size: 100%;
+}
+.container2 {
+    height: calc(100vh - 65px);
+    width: 75%;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-left: 5%;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #002171;
+}
+
+.container2 button {
+    margin-top: 20px;
+}
+
+.menu-button-main {
+    display: flex;
+    margin-left: 70%;
+    justify-content: flex-end;
+    font-size: 1rem;
+}
+
+.avatar {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.7rem;
+    color: white;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: white;
+    border-top-width: 2.5px;
+}

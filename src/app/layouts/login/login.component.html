@@ -1,0 +1,46 @@
+<mat-toolbar class="mat-elevation-z8">
+    <div class="logo">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="https://i.ibb.co/CwnG3LX/Background.png" alt="Background" width="180px" height="40px">
+    </div>
+    <div class="menu-button-main">
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <div class="container2">
+        <div class="container3">
+        </div>
+        <div class="card-header">
+            <div><mat-icon class="mat-icon">login</mat-icon></div>
+            <div>Login</div>
+        </div>
+        <div class="card-form">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="formimage">
+                    <div class="formimagecontainer">
+                        <p>User</p>
+                    </div>
+                </div>
+                <br/>
+                <mat-label>Please login with your credentials here:</mat-label>
+                <br/>
+                <br/>
+                <mat-form-field appearance="fill" style="width: 400px !important;">
+                    <mat-label>Username</mat-label>
+                    <input formControlName="username" matInput placeholder="Enter Username">
+                </mat-form-field>
+                <br/>
+                <mat-form-field appearance="fill" style="width: 400px !important;">
+                    <mat-label>Password</mat-label>
+                    <input formControlName="password" matInput placeholder="Enter Password" type="password">
+                </mat-form-field>
+                <br/>
+                <br/>
+                <div class="formbutton">
+                <button mat-raised-button color="primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>     
+</mat-sidenav-container>

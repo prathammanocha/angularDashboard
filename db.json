@@ -1,0 +1,27 @@
+{
+  "studentList": [
+    {
+      "studentName": "Pratham",
+      "studentID": "pratham369@yahoo.com",
+      "collegeName": "St Lucia",
+      "gender": "Male",
+      "id": 1
+    }
+  ],
+  "visitorList": [],
+  "logindetails": [
+    {
+      "username": "Pratham",
+      "password": "testing"
+    }
+  ],
+  "teacherlist": [
+    {
+      "teacherName": "Mr. David",
+      "teacherID": "david@eait.edu.au",
+      "departmentName": "EAIT",
+      "gender": "Male",
+      "id": 1
+    }
+  ]
+}
