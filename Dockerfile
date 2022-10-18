@@ -1,7 +1,6 @@
 FROM node:16.10 as node
 WORKDIR /app
 COPY . .
-COPY ./ /opt/mockBackend.json
 RUN npm install
 RUN npm install json-server
 RUN npm run build --prod
