@@ -22,7 +22,7 @@ export class LoginComponent implements OnInit{
   }
 
   login(){
-    this.http.get<any>("http://localhost:3000/loginDetails").subscribe(res=>{
+    this.http.get<any>("http://localhost:3000/logindetails").subscribe(res=>{
       const user = res.find((a:any)=>{
         return a.username === this.loginForm.value.username && a.password === this.loginForm.value.password
       })

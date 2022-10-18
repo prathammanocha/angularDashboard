@@ -22,13 +22,6 @@
       "departmentName": "EAIT",
       "gender": "Male",
       "id": 1
-    },
-    {
-      "teacherName": "Pranav",
-      "teacherID": "pranav316@gmail.com",
-      "departmentName": "St Lucia",
-      "gender": "Male",
-      "id": 2
     }
   ]
 }
