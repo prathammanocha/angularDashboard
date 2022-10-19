@@ -1,0 +1,7 @@
+FROM node:16.3 as builder
+WORKDIR /main
+COPY . .
+RUN npm install
+RUN npm install json-server
+CMD ["json-server", "-H", "0.0.0.0", "--watch", "/main/db.json"]
+
