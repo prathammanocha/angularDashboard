@@ -69,7 +69,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-responsive-sidebar:build"
+            "browserTarget": "angular-responsive-sidebar:build",
+            "port": 4200,
+            "host": "localhost"
           },
           "configurations": {
             "production": {
