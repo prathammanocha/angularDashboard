@@ -1,0 +1,14 @@
+version: "3.3"
+services:
+  ngserve:
+    image: prathammanocha/ngserveapp:v1.0
+    container_name: ngserve
+    ports:
+      - 4200:4200
+    restart: unless-stopped
+  jsonserve:
+    image: prathammanocha/jsonserveapp:v1.0
+    container_name: jsonserve
+    ports:
+      - 3000:3000
+    restart: unless-stopped

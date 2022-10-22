@@ -5,7 +5,8 @@ RUN npm install
 RUN npm install json-server
 RUN npm run build --prod
 EXPOSE 3000
-CMD ["json-server", "-H", "0.0.0.0", "--watch", "/app/db.json"]
-#stage 2
-FROM nginx:alpine
-COPY --from=node /app/dist/angular-responsive-sidebar /usr/share/nginx/html
+ENTRYPOINT ["json-server", "-H", "0.0.0.0", "--watch", "/app/db.json"]
+RUN npm install -g angular-http-server
+WORKDIR /app/dist/angular-responsive-sidebar
+EXPOSE 8080
+CMD ["angular-http-server", "-p", "8080"]
