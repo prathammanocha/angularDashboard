@@ -1,3 +1,5 @@
+#Dockerfile has been updated, everythings going to work in the usual fashion
+
 # AngularResponsiveSidebar
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
